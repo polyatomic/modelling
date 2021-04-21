@@ -1,0 +1,41 @@
+GEOMETRIES = benzene_train.xyz
+ENERGIES = benzene_train_e.txt
+# GEOMETRIES = benzene_test.xyz
+# ENERGIES = benzene_test_e.txt
+
+# Using max. 4-body terms
+MAX_BODY_ORDER = 4
+
+# H and C atoms
+ATOM_TYPES = 1\
+6
+
+# Type1, type2, number of grid points, shape factor
+ATOM_TYPE_PAIRS = 1 1 12 0.16\
+1 6 32 0.16\
+6 6 19 0.16
+
+# Minimum and maximum distances of atoms for different type pairs
+DISTANCES = 2.1033924978472416 5.277618365323514\
+0.97125364349380605 4.1271183651550345\
+1.2849957198372377 2.9899622071190048
+
+# Atom types and shape factors
+ATOM_TYPE_TRIPLETS = 1 1 1 0.5\
+1 6 6 0.5 0.5\
+6 1 1 0.5 0.5\
+6 6 6 0.5
+
+ATOM_TYPE_QUADRUPLETS = 1 1 1 1 4\
+1 6 6 6 4 4\
+6 1 1 1 4 4\
+1 1 6 6 4 4 4\
+6 6 6 6 4
+
+# Matern kernel
+KERNEL_TYPE = 3
+
+#N_THREADS = 6
+
+# Model coeffs
+LINEAR_COEFFS = coeffs.txt
