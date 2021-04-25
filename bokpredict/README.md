@@ -5,7 +5,7 @@ Tool for molecular potential energy prediction with body-ordered kernel machine 
 ## Example
 
 1. Go to the RC subdirectory and run `set_env`. 
-1. Go to the `examples` subdirectory and run
+1. Go to the `examples/benzene` subdirectory and run
 ```
 bokpredict -p params.txt > res.txt
 ```
